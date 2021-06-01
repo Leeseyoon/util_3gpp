@@ -322,7 +322,7 @@ func ToSupi(suci string, privateKey string) (string, error) {
 		return suci, fmt.Errorf("Unknown suciPrefix\n")
 	}
 
-	logger.Util3GPPLog.Infof("scheme %s\n", suciPart[schemePlace])
+	logger.Util3GPPLog.Infof("scheme 11%s\n", suciPart[schemePlace])
 	scheme := suciPart[schemePlace]
 	mccMnc := suciPart[mccPlace] + suciPart[mncPlace]
 
